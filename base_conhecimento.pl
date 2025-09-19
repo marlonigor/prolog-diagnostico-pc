@@ -31,3 +31,13 @@ sintoma_de(sistema_operacional_lento, disco_rigido_com_falha).
 sintoma_de(tela_azul_da_morte, disco_rigido_com_falha).
 
 sintoma_de(sistema_operacional_lento, superaquecimento_do_processador).
+
+% --- REGRAS ---
+% Aqui definimos o comportamento e a inteligência do nosso sistema.
+
+% A regra 'investigar/1' recebe um Sintoma, procura por um Diagnostico
+% associado e exibe o resultado de forma amigável.
+investigar(Sintoma) :-
+    sintoma_de(Sintoma, Diagnostico),
+    write('-> Para o sintoma: '), write(Sintoma), nl,
+    write('   Um possível diagnóstico é: '), write(Diagnostico), nl.
