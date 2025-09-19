@@ -16,3 +16,18 @@ diagnostico(memoria_ram_mal_encaixada_ou_com_defeito).
 diagnostico(disco_rigido_com_falha).
 diagnostico(superaquecimento_do_processador).
 diagnostico(problema_de_driver_ou_software).
+
+% --- RELAÇÕES ---
+% Mapeamos aqui quais sintomas estão associados a quais diagnósticos.
+% Usamos o predicado sintoma_de(Sintoma, Diagnostico).
+
+sintoma_de(pc_nao_liga, fonte_de_energia_queimada).
+
+sintoma_de(pc_liga_mas_nao_da_video, memoria_ram_mal_encaixada_ou_com_defeito).
+sintoma_de(pc_emite_bips_sequenciais, memoria_ram_mal_encaixada_ou_com_defeito).
+sintoma_de(tela_azul_da_morte, memoria_ram_mal_encaixada_ou_com_defeito).
+
+sintoma_de(sistema_operacional_lento, disco_rigido_com_falha).
+sintoma_de(tela_azul_da_morte, disco_rigido_com_falha).
+
+sintoma_de(sistema_operacional_lento, superaquecimento_do_processador).
