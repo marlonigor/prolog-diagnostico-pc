@@ -7,7 +7,7 @@ sintoma(pc_nao_liga).
 sintoma(pc_liga_mas_nao_da_video).
 sintoma(pc_emite_bips_sequenciais).
 sintoma(sistema_operacional_lento).
-sintoma(tela_azul_da_morte).
+sintoma(tela_azul).
 
 % Diagnósticos possíveis que o sistema pode inferir.
 % Usamos o predicado 'diagnostico/1' para declarar cada um.
@@ -25,10 +25,10 @@ sintoma_de(pc_nao_liga, fonte_de_energia_queimada).
 
 sintoma_de(pc_liga_mas_nao_da_video, memoria_ram_mal_encaixada_ou_com_defeito).
 sintoma_de(pc_emite_bips_sequenciais, memoria_ram_mal_encaixada_ou_com_defeito).
-sintoma_de(tela_azul_da_morte, memoria_ram_mal_encaixada_ou_com_defeito).
+sintoma_de(tela_azul, memoria_ram_mal_encaixada_ou_com_defeito).
 
 sintoma_de(sistema_operacional_lento, disco_rigido_com_falha).
-sintoma_de(tela_azul_da_morte, disco_rigido_com_falha).
+sintoma_de(tela_azul, disco_rigido_com_falha).
 
 sintoma_de(sistema_operacional_lento, superaquecimento_do_processador).
 
