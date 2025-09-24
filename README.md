@@ -1,4 +1,4 @@
-# Sistema Especialista de Diagnóstico em Prolog
+# Sistema Especialista de Diagnóstico
 
 Este projeto é um sistema especialista simples, desenvolvido em Prolog, com o objetivo de diagnosticar problemas comuns de computador com base em sintomas informados. 
 
